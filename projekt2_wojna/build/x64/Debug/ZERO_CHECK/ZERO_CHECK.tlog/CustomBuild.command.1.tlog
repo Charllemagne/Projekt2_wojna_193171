@@ -1,0 +1,10 @@
+^C:\USERS\KAROL\DESKTOP\PROJEKT2_WOJNA\BUILD\CMAKEFILES\F6EAB27D833795B3F4CB7E183479A9FB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Karol/Desktop/projekt2_wojna -BC:/Users/Karol/Desktop/projekt2_wojna/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Karol/Desktop/projekt2_wojna/build/Projekt2_wojna.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
